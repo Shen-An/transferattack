@@ -11,7 +11,7 @@ import tqdm
 import sys
 
 parser = argparse.ArgumentParser(description='Purify Images')
-parser.add_argument('--dir', default='../../help/adv/adv/Admix-TI-DIM', help='input image folder (can have subdirs)')
+parser.add_argument('--dir', default='../../help/adv/adv/Ours-TI-DIM', help='input image folder (can have subdirs)')
 parser.add_argument('--purifier', type=str, default='NRP',  help='NRP, NRP_resG')
 parser.add_argument('--dynamic', action='store_true', help='Dynamic inference (white-box defense)')
 parser.add_argument('--output', type=str, default='../../help/purified', help='output folder')
