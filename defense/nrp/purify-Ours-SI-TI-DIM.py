@@ -11,10 +11,10 @@ import tqdm
 import sys
 
 parser = argparse.ArgumentParser(description='Purify Images')
-parser.add_argument('--dir', default='../../help/adv/adv/Ours-SI-TI-DIM', help='input image folder (can have subdirs)')
+parser.add_argument('--dir', default='../../4block_flip_pf_SITIDIM/images/', help='input image folder (can have subdirs)')
 parser.add_argument('--purifier', type=str, default='NRP',  help='NRP, NRP_resG')
 parser.add_argument('--dynamic', action='store_true', help='Dynamic inference (white-box defense)')
-parser.add_argument('--output', type=str, default='../../help/purified', help='output folder')
+parser.add_argument('--output', type=str, default='../../4block_flip_pf_SITIDIM/images/purified', help='output folder')
 parser.add_argument('--model_pth', type=str, default='../../help/pretrained_purifiers/NRP.pth', help='pretrained model path')
 parser.add_argument('--GPU_ID', default='0', type=str, help='GPU_ID')
 # 新增：输入控制与性能参数
