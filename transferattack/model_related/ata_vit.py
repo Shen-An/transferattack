@@ -160,7 +160,7 @@ class ATTENTION_RIGION(torch.nn.Module):
         f2l = {dev.iloc[i]['filename']: dev.iloc[i]['label'] for i in range(len(dev))}
         return f2l
     
-    def forward(self, datapath='./data/images', labelpath='./data/labels.csv'):
+    def forward(self, datapath='./data/images', labelpath='./data/labels_adv.csv'):
         """
         Obtain the attention region for ATA_ViT
         """
@@ -225,7 +225,7 @@ class EMBED_POSITION(torch.nn.Module):
         f2l = {dev.iloc[i]['filename']: dev.iloc[i]['label'] for i in range(len(dev))}
         return f2l
 
-    def forward(self, datapath='./data/images', labelpath='./data/labels.csv'):
+    def forward(self, datapath='./data/images', labelpath='./data/labels_adv.csv'):
         """
         Obtain the embedding position for ATA_ViT
         """
@@ -332,7 +332,7 @@ class DataPreprocess(torch.nn.Module):
             mask[x, y] = 1
         return mask
 
-    def forward(self, datapath='./data/images', labelpath='./data/labels.csv'):
+    def forward(self, datapath='./data/images', labelpath='./data/labels_adv.csv'):
         """
         The data preprocess for ATA_ViT
         """

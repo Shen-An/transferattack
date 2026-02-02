@@ -16,7 +16,7 @@ print(f"Using device: {device}")
 # 路径配置（修正原路径多余符号）
 paths = {
     "img_root": r"E:/TransferAttack/TransferAttack/help/purified",
-    "label_csv": r"E:/TransferAttack/TransferAttack/help/labels.csv"
+    "label_csv": r"E:/TransferAttack/TransferAttack/help/labels_adv.csv"
 }
 
 # 加载InceptionV3模型

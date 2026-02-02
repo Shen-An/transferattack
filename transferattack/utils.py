@@ -110,11 +110,11 @@ class AdvDataset(torch.utils.data.Dataset):
         self.targeted = targeted
         self.target_class = target_class
         self.data_dir = input_dir
-        self.f2l = self.load_labels(os.path.join(self.data_dir, 'labels.csv'))
+        self.f2l = self.load_labels(os.path.join(self.data_dir, 'labels_adv.csv'))
 
         if eval:
             self.data_dir = output_dir
-            # load images from output_dir, labels from input_dir/labels.csv
+            # load images from output_dir, labels from input_dir/labels_adv.csv
             print('=> Eval mode: evaluating on {}'.format(self.data_dir))
         else:
             self.data_dir = os.path.join(self.data_dir, 'images')

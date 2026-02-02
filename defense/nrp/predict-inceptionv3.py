@@ -9,8 +9,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 paths = {
-    "img_root": r"./purified",
-    "label_csv": r"./labels.csv",
+    "img_root": r"../../BSRpurified_images/",
+    "label_csv": r"./labels_adv.csv",
     # 如果你确实要加载本地权重文件，填入路径；否则留空
     "weights_file": ""
 }

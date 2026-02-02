@@ -39,7 +39,7 @@ class AA(Attack):
         self.epoch = epoch
         self.decay = decay
         self.feature_layer = self.find_layer(layer_name)
-        self.l2f = self.get_l2f(file_name='labels.csv')
+        self.l2f = self.get_l2f(file_name='labels_adv.csv')
 
     def get_l2f(self, file_name):
         dev = pd.read_csv(os.path.join('./data', file_name))
